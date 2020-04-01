@@ -18,10 +18,7 @@
               可充分满足行业多样化和企业个性化的大数据需求，为企业IT运维、业务运营、系统安全以及合规审计等多方面提供深度服务。
               公司持续稳健发展，产品已在农贸市场、矿山应用等多行业应用落地，客户涵盖北京市、云南、贵州、湖南、新疆、四川、福建、内蒙古等多省市自治区。
             </p>
-            <b-button
-              type="is-light is-radiusless has-text-grey has-text-weight-light"
-              style="margin-top:1rem;padding:1.25rem 2rem;"
-            >查看更多</b-button>
+            <b-button type="is-light is-radiusless has-text-grey has-text-weight-light load-more-btn">查看更多</b-button>
           </div>
           <img
             src="/关于我们.png"
@@ -49,6 +46,11 @@ export default class AboutUs extends Vue {
 <style scoped>
 .left-side {
   max-width: 42%;
+}
+.load-more-btn {
+  margin-top: 1rem;
+  width: 8rem;
+  height: 2.5rem;
 }
 @media screen and (max-width: 640px) {
   .left-side {

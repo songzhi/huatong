@@ -11,7 +11,7 @@
           <div
             class="card is-inline-block"
             v-for="item in news"
-            :key="item.title"
+            :key="item.img"
           >
             <div class="card-image">
               <figure class="image is-2by1">
@@ -36,7 +36,7 @@
         <b-button
           type="is-text"
           icon-right="chevron-right"
-          style="text-decoration:none;"
+          style="text-decoration:none;margin-top:2rem;"
         >
           查看更多
         </b-button>
@@ -74,6 +74,6 @@ export default class Posts extends Vue {
   background-color: white;
 }
 .card:hover .title {
-  color: #167df0;
+  color: #2E72B0;
 }
 </style>

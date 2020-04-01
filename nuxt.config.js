@@ -1,9 +1,8 @@
-
 export default {
   mode: 'universal',
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: '星际华通科技公司',
     meta: [
@@ -11,45 +10,41 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '星际华通科技公司' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/logo.png' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/logo.png' }]
   },
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#fff' },
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
+   ** Global CSS
+   */
+  css: [],
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: [],
   /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-    '@nuxt/typescript-build',
-  ],
+   ** Nuxt.js dev-modules
+   */
+  buildModules: ['@nuxt/typescript-build'],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy',
+    'nuxt-buefy'
   ],
+  buefy: {
+    css: false
+  },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {}
   }
 }

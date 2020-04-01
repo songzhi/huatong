@@ -37,7 +37,7 @@
           <div class="has-text-centered">
             <b-button
               type="is-info"
-              style="padding:1.25rem 2.5rem;margin:auto;"
+              class="submit-btn"
               rounded
             >提交</b-button>
           </div>
@@ -67,6 +67,11 @@ export default class ContactUs extends Vue {
   max-width: 1038px;
   margin: auto;
   padding: 3rem;
+}
+.submit-btn {
+  width: 8rem;
+  height: 3rem;
+  margin:auto;
 }
 input {
   border-radius: unset !important;

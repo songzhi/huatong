@@ -60,21 +60,21 @@ export default class Products extends Vue {
 <style scoped>
 .card {
   width: 92%;
-  margin: 1rem;
+  margin: .5rem;
   box-shadow: none;
 }
 .card button {
   color: grey;
 }
 .card:hover button {
-  color: #167df0;
-  border-color: #167df0;
+  color: #2E72B0;
+  border-color: #2E72B0;
 }
 .card .title {
   margin-bottom: 0;
 }
 .card:hover .title {
-  color: #167df0;
+  color: #2E72B0;
 }
 .card:hover {
   box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.12);

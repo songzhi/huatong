@@ -2,7 +2,7 @@
   <section class="hero" id="产品">
     <div class="hero-body">
       <div class="container">
-        <div>
+        <div class="header">
           <h1 class="title has-text-info is-inline">
             产品
             <span class="subtitle has-text-weight-light">寻找您想要的产品</span>
@@ -84,16 +84,20 @@ export default class Products extends Vue {
   border: 2px solid transparent;
   box-shadow: none;
 }
+.header {
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+}
 .card:hover .card-content {
-  background-color: #167df0;
+  background-color: #2E72B0;
   color: white;
 }
 .card:hover button {
-  background-color: #167df0;
+  background-color: #2E72B0;
   color: white !important;
 }
 .card:hover {
-  border: 2px solid #167df0;
+  border: 2px solid #2E72B0;
 }
 .card-image {
   padding: 64px;

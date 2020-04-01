@@ -48,7 +48,7 @@ export default class NavBar extends Vue {
 
 <style scoped>
 .navbar {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: auto;
   height: 64px;
   background-color: transparent;

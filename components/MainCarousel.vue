@@ -1,6 +1,5 @@
 <template>
   <b-carousel
-    :indicator="false"
     :arrow="false"
     :pause-info="false"
   >

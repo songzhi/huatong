@@ -6,7 +6,7 @@
     <img src="/智慧农贸.png" />
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
+        <h1 class="title has-text-info">
           智慧农贸
         </h1>
         <h2 class="subtitle has-text-weight-light">
@@ -30,3 +30,11 @@ export default class SmartAgriculture extends Vue {
 
 }
 </script>
+
+<style lang="scss" scoped>
+@media screen and (min-width: 640px) {
+  .container {
+    padding-left: 20rem;
+  }
+}
+</style>
