@@ -4,19 +4,9 @@
       <template v-slot:brand>
         <b-navbar-item>
           <img
-            src="/logo.png"
+            src="/brand.png"
             alt="星际华通科技公司"
-            v-show="isHasBg"
           >
-          <span>
-            <span class="brand-title">
-            星际华通
-          </span>
-          <br>
-          <span class="brand-subtitle">
-            XINGJIHUATONG
-          </span>
-          </span>
         </b-navbar-item>
       </template>
       <template v-slot:start>
@@ -104,8 +94,7 @@ header.has-bg {
   color: white;
   border-bottom: 2px solid transparent;
   img {
-    width: 64px;
-    max-height: 64px;
+    max-height: 88%;
   }
 }
 .navbar-item.nuxt-link-exact-active {

@@ -107,8 +107,14 @@ body * {
   }
 }
 hr {
+  display: block;
   height: 1px;
-  color: #ccc;
+  min-height: 1px;
+  width: 100%;
+  border: 0;
+  background: rgba(0,0,0,0.12);
+  margin: 0;
+  transition: background .3s,opacity .3s;
 }
 </style>
 
