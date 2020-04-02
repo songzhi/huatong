@@ -20,25 +20,6 @@ export default class DefaultLayout extends Vue {
 }
 </script>
 
-<style>
-body,
-html {
-  scroll-behavior: smooth;
-}
-body * {
-  transition: all .15s;
-  transition-timing-function: ease-out;
-}
-.hero {
-  max-width: 100vw;
-}
-@media screen and (min-width: 1408px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-</style>
-
 <style lang="scss">
 // Import Bulma's core
 @import 'bulma/sass/utilities/_all';
@@ -103,3 +84,31 @@ $link-focus-border: $primary;
 @import 'bulma';
 @import 'buefy/src/scss/buefy';
 </style>
+
+
+<style>
+body,
+html {
+  scroll-behavior: smooth;
+}
+body * {
+  transition: all 0.15s;
+  transition-timing-function: ease-out;
+}
+.hero {
+  max-width: 100vw;
+}
+.hero-body {
+  padding: 4rem 1.5rem;
+}
+@media screen and (min-width: 1408px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+hr {
+  height: 1px;
+  color: #ccc;
+}
+</style>
+

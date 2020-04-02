@@ -2,22 +2,35 @@
   <header :class="{'has-bg': isHasBg}">
     <b-navbar>
       <template v-slot:brand>
-        <b-navbar-item
-          tag="router-link"
-          :to="{ path: '/' }"
-        >
+        <b-navbar-item>
           <img
             src="/logo.png"
             alt="星际华通科技公司"
+            v-show="isHasBg"
           >
-          星际华通科技公司
+          <span>
+            <span class="brand-title">
+            星际华通
+          </span>
+          <br>
+          <span class="brand-subtitle">
+            XINGJIHUATONG
+          </span>
+          </span>
         </b-navbar-item>
       </template>
       <template v-slot:start>
         <b-navbar-item
+          tag="router-link"
+          to="/"
+        >
+          首页
+        </b-navbar-item>
+        <b-navbar-item
           v-for="item in navItems"
+          tag="router-link"
           :key="item"
-          :href="'#'+item"
+          :to="'/#'+item"
         >
           {{item}}
         </b-navbar-item>
@@ -48,6 +61,7 @@ export default class NavBar extends Vue {
     const contentTop = document.getElementById('产品与服务')!.offsetTop
     this.isHasBg = scrollTop > (contentTop - 64)
   }
+
   mounted() {
     const onScroll = throttle(100, () => this.onScroll())
     window.addEventListener("scroll", onScroll);
@@ -77,6 +91,10 @@ header.has-bg {
     color: #666;
     font-weight: 300;
   }
+  .navbar-item.nuxt-link-exact-active {
+    border-bottom: 2px solid #2e72b0;
+    color: #2e72b0;
+  }
 }
 .navbar-menu {
   margin-left: 64px;
@@ -84,6 +102,25 @@ header.has-bg {
 .navbar-item {
   padding: 0.5rem 1.75rem;
   color: white;
+  border-bottom: 2px solid transparent;
+  img {
+    width: 64px;
+    max-height: 64px;
+  }
+}
+.navbar-item.nuxt-link-exact-active {
+  border-bottom: 2px solid white;
+  color: white;
+}
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+.navbar-link.is-active {
+  background-color: unset;
 }
 
 @media screen and (max-width: 640px) {
