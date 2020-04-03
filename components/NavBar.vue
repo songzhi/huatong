@@ -4,8 +4,14 @@
       <template v-slot:brand>
         <b-navbar-item>
           <img
-            src="/brand.png"
+            src="/brand1.png"
             alt="星际华通科技公司"
+            v-if="!isHasBg"
+          >
+          <img
+            src="/brand2.png"
+            alt="星际华通科技公司"
+            v-else
           >
         </b-navbar-item>
       </template>
@@ -94,9 +100,10 @@ header.has-bg {
   color: white;
   border-bottom: 2px solid transparent;
   img {
-    max-height: 88%;
+    max-height: 64px;
   }
 }
+
 .navbar-item.nuxt-link-exact-active {
   border-bottom: 2px solid white;
   color: white;
@@ -118,6 +125,9 @@ a.navbar-item.is-active,
   }
   .navbar-item {
     color: black;
+    img {
+      max-height: 48px;
+    }
   }
 }
 </style>

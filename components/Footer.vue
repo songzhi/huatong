@@ -28,6 +28,9 @@
             <p>邮箱：xstar8765@.com</p>
           </div>
         </div>
+        <hr>
+        <br>
+        <div>COPYRIGHI(@)2020 MO)))$_6543  </div>
       </div>
     </div>
   </footer>
