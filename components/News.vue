@@ -64,7 +64,7 @@ export default class Posts extends Vue {
   background: rgba(248, 248, 248, 1);
 }
 .card {
-  max-width: 384px;
+  max-width: 25rem;
   margin: 0.5rem;
   border: 2px solid transparent;
   box-shadow: none;

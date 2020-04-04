@@ -79,7 +79,7 @@ export default class Products extends Vue {
 
 <style scoped>
 .card {
-  max-width: 384px;
+  max-width: 25rem;
   margin: 0.5rem;
   border: 2px solid transparent;
   box-shadow: none;

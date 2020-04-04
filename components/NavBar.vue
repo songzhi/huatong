@@ -69,11 +69,11 @@ export default class NavBar extends Vue {
 .navbar {
   max-width: 1200px;
   margin: auto;
-  height: 64px;
+  height: 56px;
   background-color: transparent;
 }
 header {
-  height: 64px;
+  height: 56px;
   position: fixed;
   top: 0;
   z-index: 30;
@@ -93,14 +93,14 @@ header.has-bg {
   }
 }
 .navbar-menu {
-  margin-left: 64px;
+  margin-left: 56px;
 }
 .navbar-item {
   padding: 0.5rem 1.75rem;
   color: white;
   border-bottom: 2px solid transparent;
   img {
-    max-height: 64px;
+    max-height: 56px;
   }
 }
 

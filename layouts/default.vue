@@ -90,6 +90,7 @@ $link-focus-border: $primary;
 body,
 html {
   scroll-behavior: smooth;
+  font-size: 0.85em;
 }
 body * {
   transition: all 0.15s;
@@ -99,11 +100,11 @@ body * {
   max-width: 100vw;
 }
 .hero-body {
-  padding: 4rem 1.5rem;
+  padding: 4rem .5rem;
 }
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 hr {
