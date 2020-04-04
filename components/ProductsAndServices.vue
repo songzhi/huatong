@@ -81,7 +81,7 @@ export default class Products extends Vue {
 }
 @media screen and (min-width: 640px) {
   .card {
-    width: 379px;
+    width: 25rem;
   }
 }
 </style>
