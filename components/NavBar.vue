@@ -46,9 +46,9 @@ export default class NavBar extends Vue {
   navItems = [
     '产品与服务',
     '智慧农贸',
-    '关于我们',
     '最新动态',
-    '招商加盟',
+    '加盟合作',
+    '关于我们',
     '联系我们'
   ]
   isHasBg = false
