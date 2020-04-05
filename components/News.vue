@@ -12,9 +12,12 @@
             class="card is-inline-block"
             v-for="item in news"
             :key="item.img"
+            @click="isVideoShowing=true"
           >
             <div class="card-image">
-              <figure class="image is-2by1">
+              <figure
+                class="image is-2by1"
+              >
                 <img
                   :src="item.img"
                   :alt="item.title"
@@ -42,6 +45,9 @@
         </b-button>
       </div>
     </div>
+    <b-modal :active.sync="isVideoShowing">
+      <div v-video-player:myVideoPlayer="playerOptions" style="margin:auto;"></div>
+    </b-modal>
   </section>
 </template>
 
@@ -56,6 +62,13 @@ export default class Posts extends Vue {
     { img: '/做菜2.png', title: '做菜怎样搭配新鲜食材', content: '智能溯源收银秤供商户随时调用，能让任何年龄文化层次的商户都能便捷操作。满足了消费者对。' },
     { img: '/做菜3.png', title: '做菜怎样搭配新鲜食材', content: '智能溯源收银秤供商户随时调用，能让任何年龄文化层次的商户都能便捷操作。满足了消费者对。' },
   ]
+  playerOptions = {
+    sources: [{
+      type: "video/mp4",
+      src: "/intro.mp4"
+    }]
+  }
+  isVideoShowing = false
 }
 </script>
 
@@ -74,6 +87,6 @@ export default class Posts extends Vue {
   background-color: white;
 }
 .card:hover .title {
-  color: #2E72B0;
+  color: #2e72b0;
 }
 </style>

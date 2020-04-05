@@ -16,7 +16,6 @@ import NavBar from '@/components/NavBar.vue'
   }
 })
 export default class DefaultLayout extends Vue {
-
 }
 </script>
 
@@ -100,7 +99,7 @@ body * {
   max-width: 100vw;
 }
 .hero-body {
-  padding: 4rem .5rem;
+  padding: 4rem 0.5rem;
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -113,9 +112,16 @@ hr {
   min-height: 1px;
   width: 100%;
   border: 0;
-  background: rgba(0,0,0,0.12);
+  background: rgba(0, 0, 0, 0.12);
   margin: 0;
-  transition: background .3s,opacity .3s;
+  transition: background 0.3s, opacity 0.3s;
+}
+div.video-js {
+  margin: auto !important;
+}
+.video-js .vjs-big-play-button {
+  left: calc(50% - 1.5em);
+  top: calc(50% - 0.75em)
 }
 </style>
 
