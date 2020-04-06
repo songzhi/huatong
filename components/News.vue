@@ -25,7 +25,7 @@
               </figure>
             </div>
             <div class="card-content">
-              <div class="title is-size-5 has-text-weight-light">
+              <div class="title" style="font-size:20px;">
                 {{item.title}}
               </div>
               <div

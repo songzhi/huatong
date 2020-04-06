@@ -44,7 +44,7 @@
               </figure>
             </div>
             <div class="card-content">
-              <div style="font-size:20px;">
+              <div style="font-size:20px;line-height:48px;font-weight:400;">
                 {{item.title}}
               </div>
               <div

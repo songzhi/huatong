@@ -100,7 +100,7 @@ body * {
   max-width: 100vw;
 }
 .hero-body {
-  padding: 4rem 0.5rem;
+  padding: 83px 0.5rem;
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -127,6 +127,13 @@ div.video-js {
 .hero .title {
   font-size: 24px;
   color: #333333;
+  font-weight: 400;
+  line-height: 32px;
+}
+.hero .subtitle {
+  color: #999999;
+  font-size: 18px;
+  line-height: 25px;
 }
 .card {
   color: #333333;

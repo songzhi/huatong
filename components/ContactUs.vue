@@ -3,8 +3,8 @@
     <div class="hero-body">
       <div class="container">
         <div class="card ">
-          <h1 class="title has-text-weight-light has-text-centered" style="font-size:24px;"> 联系我们</h1>
-          <h2 class="subtitle has-text-weight-light has-text-centered">可提交对我们的意见或建议</h2>
+          <h1 class="title has-text-weight-light has-text-centered" style="font-size:24px;line-height:42px;"> 联系我们</h1>
+          <h2 class="subtitle has-text-weight-light has-text-centered" style="font-size:15px;line-height:24px;">可提交对我们的意见或建议</h2>
           <div class="inline-fields">
             <b-field class="is-inline-block inline-field">
               <b-input

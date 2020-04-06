@@ -28,7 +28,7 @@
             <div class="card-content">
               <div
                 class="title has-text-weight-light"
-                style="font-size:20px;"
+                style="font-size:20px;line-height:18px;"
               >
                 {{item.title}}
               </div>
