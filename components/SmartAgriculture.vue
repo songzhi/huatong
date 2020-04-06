@@ -39,4 +39,11 @@ export default class SmartAgriculture extends Vue {
     padding-left: 20rem;
   }
 }
+.subtitle, .content {
+  font-size: 15px;
+
+}
+.content {
+  color: #777777;
+}
 </style>

@@ -3,25 +3,28 @@
     <div class="hero-body">
       <div class="container">
         <div class="header">
-          <h1 class="title has-text-info is-inline">
+          <h1 class="title has-text-info is-inline" style="font-size:24px;">
             产品
             <span class="subtitle has-text-weight-light">寻找您想要的产品</span>
           </h1>
-          <div style="float:right;">
+          <div style="float:right;font-size:14px;">
             <b-button
               type='is-info'
               rounded
             >全部</b-button>
             <b-button
               type='is-light'
+              style="color:#777777;"
               rounded
             >电子秤</b-button>
             <b-button
               type='is-light'
+              style="color:#777777;"
               rounded
             >电子秤</b-button>
             <b-button
               type='is-light'
+              style="color:#777777;"
               rounded
             >电子秤</b-button>
           </div>
@@ -41,16 +44,18 @@
               </figure>
             </div>
             <div class="card-content">
-              <div class="is-size-5">
+              <div style="font-size:20px;">
                 {{item.title}}
               </div>
               <div
                 class="content has-text-weight-light"
+                style="font-size:15px;"
                 v-html="item.content"
               >
               </div>
               <b-button
                 type="is-radiusless is-borderless has-text-grey"
+                style="font-size:15px;"
                 inverted
               >查看详情</b-button>
             </div>
@@ -90,6 +95,9 @@ export default class Products extends Vue {
 }
 .card:hover .card-content {
   background-color: #2E72B0;
+  color: white;
+}
+.card:hover .content {
   color: white;
 }
 .card:hover button {

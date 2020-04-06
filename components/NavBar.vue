@@ -54,8 +54,9 @@ export default class NavBar extends Vue {
   isHasBg = false
   onScroll() {
     const scrollTop = document.body.scrollTop + document.documentElement.scrollTop;
-    const contentTop = document.getElementById('产品与服务')!.offsetTop
-    this.isHasBg = scrollTop > (contentTop - 64)
+    // const contentTop = document.getElementById('产品与服务')!.offsetTop
+    // this.isHasBg = scrollTop > (contentTop - 64)
+    this.isHasBg = scrollTop > 100
   }
 
   mounted() {
@@ -99,6 +100,7 @@ header.has-bg {
   padding: 0.5rem 1.75rem;
   color: white;
   border-bottom: 2px solid transparent;
+  font-size: 15px;
   img {
     max-height: 56px;
   }

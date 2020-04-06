@@ -5,7 +5,7 @@
   >
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title "> 最新动态</h1>
+        <h1 class="title" style="font-size:24px;"> 最新动态</h1>
         <h2 class="subtitle">Latest News</h2>
         <div>
           <div
@@ -31,6 +31,7 @@
               <div
                 class="content has-text-weight-light"
                 v-html="item.content"
+                style="font-size:15px;"
               >
               </div>
             </div>
@@ -39,7 +40,7 @@
         <b-button
           type="is-text"
           icon-right="chevron-right"
-          style="text-decoration:none;margin-top:2rem;"
+          style="text-decoration:none;margin-top:2rem;font-size:14px;"
         >
           查看更多
         </b-button>

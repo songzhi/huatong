@@ -4,7 +4,7 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <h1 class="title is-size-5 has-text-weight-normal">星际华通科技有限公司</h1>
+            <h1 class="title has-text-weight-normal" style="font-size:20px;">星际华通科技有限公司</h1>
             <div>
               <figure class="image is-inline-block">
                 <img src="/weibo.png" alt="" srcset="">
@@ -52,7 +52,8 @@ export default class Footer extends Vue {
 }
 .info p {
   line-height: 3rem;
-  color: rgba(119, 119, 119, 1);
+  color: #777777;
+  font-size: 15px;
 }
 .image {
   width: 24px;

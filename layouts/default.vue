@@ -90,6 +90,7 @@ body,
 html {
   scroll-behavior: smooth;
   font-size: 0.85em;
+  color: #333333;
 }
 body * {
   transition: all 0.15s;
@@ -121,7 +122,18 @@ div.video-js {
 }
 .video-js .vjs-big-play-button {
   left: calc(50% - 1.5em);
-  top: calc(50% - 0.75em)
+  top: calc(50% - 0.75em);
+}
+.hero .title {
+  font-size: 24px;
+  color: #333333;
+}
+.card {
+  color: #333333;
+}
+.card .content,
+.card button {
+  color: #777777;
 }
 </style>
 

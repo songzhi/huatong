@@ -26,15 +26,22 @@
               </figure>
             </div>
             <div class="card-content">
-              <div class="title is-size-5 has-text-weight-light">
+              <div
+                class="title has-text-weight-light"
+                style="font-size:20px;"
+              >
                 {{item.title}}
               </div>
               <div
                 class="content has-text-centered	has-text-weight-light"
                 v-html="item.content"
+                style="font-size:15px;"
               >
               </div>
-              <b-button type="is-outlined is-radiusless">查看详情</b-button>
+              <b-button
+                type="is-outlined is-radiusless"
+                style="font-size:14px;"
+              >查看详情</b-button>
             </div>
           </div>
         </div>
@@ -60,21 +67,21 @@ export default class Products extends Vue {
 <style scoped>
 .card {
   width: 92%;
-  margin: .5rem;
+  margin: 0.5rem;
   box-shadow: none;
 }
 .card button {
   color: grey;
 }
 .card:hover button {
-  color: #2E72B0;
-  border-color: #2E72B0;
+  color: #2e72b0;
+  border-color: #2e72b0;
 }
 .card .title {
   margin-bottom: 0;
 }
 .card:hover .title {
-  color: #2E72B0;
+  color: #2e72b0;
 }
 .card:hover {
   box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.12);
