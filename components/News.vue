@@ -5,7 +5,10 @@
   >
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title" style="font-size:24px;"> 最新动态</h1>
+        <h1
+          class="title"
+          style="font-size:24px;"
+        > 最新动态</h1>
         <h2 class="subtitle">Latest News</h2>
         <div>
           <div
@@ -15,23 +18,30 @@
             @click="isVideoShowing=true"
           >
             <div class="card-image">
-              <figure
-                class="image is-2by1"
-              >
+              <figure class="image is-2by1">
                 <img
                   :src="item.img"
                   :alt="item.title"
                 >
+
               </figure>
+              <b-icon
+                icon="play"
+                class="play-icon"
+                size="is-medium"
+              />
             </div>
             <div class="card-content">
-              <div class="title" style="font-size:20px;">
+              <div
+                class="title"
+                style="font-size:18px;"
+              >
                 {{item.title}}
               </div>
               <div
                 class="content has-text-weight-light"
                 v-html="item.content"
-                style="font-size:15px;"
+                style="font-size:15px;text-align:left;"
               >
               </div>
             </div>
@@ -47,7 +57,10 @@
       </div>
     </div>
     <b-modal :active.sync="isVideoShowing">
-      <div v-video-player:myVideoPlayer="playerOptions" style="margin:auto;"></div>
+      <div
+        v-video-player:myVideoPlayer="playerOptions"
+        style="margin:auto;"
+      ></div>
     </b-modal>
   </section>
 </template>
@@ -77,6 +90,14 @@ export default class Posts extends Vue {
 .hero {
   background: rgba(248, 248, 248, 1);
 }
+.hero .title {
+  line-height: 20px;
+}
+.play-icon {
+  color: white;
+  position: absolute;
+  top: calc(50% - 18px);
+}
 .card {
   max-width: 25rem;
   margin: 0.5rem;
@@ -84,10 +105,16 @@ export default class Posts extends Vue {
   box-shadow: none;
   background-color: transparent;
 }
+.card:hover {
+  cursor: pointer;
+}
 .card:hover .card-content {
   background-color: white;
 }
 .card:hover .title {
+  color: #2e72b0;
+}
+.card:hover .play-icon {
   color: #2e72b0;
 }
 </style>

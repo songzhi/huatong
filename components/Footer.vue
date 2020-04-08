@@ -4,7 +4,7 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <h1 class="title has-text-weight-normal" style="font-size:20px;">星际华通科技有限公司</h1>
+            <h1 class="title has-text-weight-normal" style="font-size:18px;">星际华通科技有限公司</h1>
             <div>
               <figure class="image is-inline-block">
                 <img src="/weibo.png" alt="" srcset="">

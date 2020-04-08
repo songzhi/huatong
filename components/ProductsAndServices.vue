@@ -27,13 +27,13 @@
             </div>
             <div class="card-content">
               <div
-                class="title has-text-weight-light"
+                class="title has-text-weight-normal"
                 style="font-size:20px;line-height:18px;"
               >
                 {{item.title}}
               </div>
               <div
-                class="content has-text-centered	has-text-weight-light"
+                class="content has-text-centered	has-text-weight-normal"
                 v-html="item.content"
                 style="font-size:15px;"
               >

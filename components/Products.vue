@@ -5,7 +5,7 @@
         <div class="header">
           <h1 class="title has-text-info is-inline" style="font-size:24px;">
             产品
-            <span class="subtitle has-text-weight-light">寻找您想要的产品</span>
+            <span class="subtitle has-text-weight-normal" style="font-size:15px;">寻找您想要的产品</span>
           </h1>
           <div style="float:right;font-size:14px;">
             <b-button

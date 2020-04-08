@@ -4,7 +4,7 @@
       <div class="container">
         <h1 class="title has-text-info" style="font-size:24px;line-height:33px;">
           合作伙伴
-          <span class="subtitle has-text-weight-light">与多家机构进行战略合作</span>
+          <span class="subtitle has-text-weight-light" style="font-size:15px;">与多家机构进行战略合作</span>
         </h1>
         <figure
           class="image is-inline-block"

@@ -85,8 +85,8 @@ header.has-bg {
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   .navbar-item {
-    color: #666;
-    font-weight: 300;
+    color: #333;
+    font-weight: 400;
   }
   .navbar-item.nuxt-link-exact-active {
     border-bottom: 2px solid #2e72b0;
